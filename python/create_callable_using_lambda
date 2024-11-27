@@ -1,0 +1,9 @@
+# why does below prints only 2?
+
+callables = []
+
+for i in range(3):
+    callables.append(lambda: i)
+
+for callable in callables:
+    print(callable())
